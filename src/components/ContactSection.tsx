@@ -46,16 +46,30 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for your message. I'll get back to you soon!",
-        variant: "default",
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'ad9a60a0-ebd7-499d-930e-385511e805a6',
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `Portfolio Contact from ${formData.name}`,
+        }),
       });
 
-      setFormData({ name: '', email: '', message: '' });
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for your message. I'll get back to you soon!",
+          variant: "default",
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
     } catch (error) {
       toast({
         title: "Error",
@@ -226,15 +240,6 @@ const ContactSection = () => {
                     </Button>
                   </form>
 
-                  <div className="mt-6 p-4 rounded-lg bg-primary/5 border border-primary/10">
-                    <div className="flex items-start space-x-2">
-                      <AlertCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      <p className="text-xs text-primary/80">
-                        This form is for demonstration purposes. In a production environment, 
-                        it would connect to a backend service to actually send emails.
-                      </p>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             </div>

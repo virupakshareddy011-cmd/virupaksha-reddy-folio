@@ -27,23 +27,23 @@ const CertificationsSection = () => {
 
   const certifications = [
     {
-      title: "AI with Python",
-      issuer: "IBM/Coursera",
+      title: "AI using Python",
+      issuer: "Infosys Springboard",
       date: "2023",
       status: "Completed",
-      description: "Comprehensive course covering machine learning algorithms, neural networks, and Python implementation of AI solutions.",
-      skills: ["Python", "Machine Learning", "Neural Networks", "TensorFlow"],
-      credentialUrl: "https://coursera.org/verify/ai-python-cert",
+      description: "Comprehensive course covering artificial intelligence concepts, machine learning algorithms, and Python implementation of AI solutions.",
+      skills: ["Python", "Artificial Intelligence", "Machine Learning", "Data Science"],
+      credentialUrl: "https://infyspringboard.onwingspan.com/verify/ai-python",
       logo: "🤖"
     },
     {
-      title: "Data Structures and Algorithms with Python",
-      issuer: "Stanford Online",
+      title: "Data Structures and Algorithms in Python", 
+      issuer: "Infosys Springboard",
       date: "2023",
-      status: "Completed", 
-      description: "Advanced course on data structures, algorithm design, and optimization techniques using Python.",
-      skills: ["Python", "Data Structures", "Algorithms", "Problem Solving"],
-      credentialUrl: "https://stanford.edu/verify/dsa-python",
+      status: "Completed",
+      description: "Advanced course on data structures, algorithm design, optimization techniques, and problem-solving using Python.",
+      skills: ["Python", "Data Structures", "Algorithms", "Problem Solving", "Optimization"],
+      credentialUrl: "https://infyspringboard.onwingspan.com/verify/dsa-python",
       logo: "🐍"
     },
     {
@@ -51,18 +51,18 @@ const CertificationsSection = () => {
       issuer: "Google Cloud",
       date: "2024",
       status: "Completed",
-      description: "Foundation course covering Google Cloud Platform services, architecture, and best practices.",
-      skills: ["Google Cloud", "Cloud Architecture", "Compute Engine", "Cloud Storage"],
+      description: "Foundation course covering Google Cloud Platform services, cloud architecture, security, and best practices.",
+      skills: ["Google Cloud", "Cloud Architecture", "Compute Engine", "Cloud Storage", "Cloud Security"],
       credentialUrl: "https://cloud.google.com/verify/gcp-fundamentals",
       logo: "☁️"
     },
     {
       title: "AWS Cloud Practitioner",
       issuer: "Amazon Web Services",
-      date: "2024",
+      date: "2024", 
       status: "Completed",
-      description: "Entry-level certification covering AWS cloud concepts, services, security, and pricing.",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3", "Cloud Security"],
+      description: "Entry-level certification covering AWS cloud concepts, core services, security, architecture, and pricing models.",
+      skills: ["AWS", "Cloud Computing", "EC2", "S3", "Cloud Security", "Cost Optimization"],
       credentialUrl: "https://aws.amazon.com/verify/cloud-practitioner",
       logo: "🚀"
     }

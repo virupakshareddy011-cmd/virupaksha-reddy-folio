@@ -68,11 +68,10 @@ const AboutSection = () => {
                   innovative solutions.
                 </p>
                 
-                <p className="text-foreground/90 leading-relaxed mb-6">
-                  With a strong foundation in <strong className="text-secondary">Python programming</strong> and 
-                  experience in cloud computing platforms like <strong className="text-secondary">AWS</strong> and 
-                  <strong className="text-secondary"> Google Cloud</strong>, I've developed and deployed various 
-                  projects that demonstrate my technical capabilities and problem-solving approach.
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  With hands-on experience in UAV coordination projects, cloud computing (AWS & Google Cloud), 
+                  and comprehensive AI/ML expertise, I've developed and deployed various projects that demonstrate 
+                  my technical capabilities and real-world problem-solving approach.
                 </p>
                 
                 <p className="text-foreground/90 leading-relaxed">

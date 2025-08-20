@@ -7,7 +7,9 @@ const Footer = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Education', href: '#education' },
+    { name: 'Achievements', href: '#achievements' },
     { name: 'Certifications', href: '#certifications' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -74,12 +76,12 @@ const Footer = () => {
             {/* Quick Links */}
             <div className="space-y-4">
               <h4 className="text-lg font-semibold text-foreground">Quick Links</h4>
-              <nav className="space-y-2">
+              <nav className="grid grid-cols-2 gap-2">
                 {quickLinks.map((link) => (
                   <button
                     key={link.name}
                     onClick={() => scrollToSection(link.href)}
-                    className="block text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
+                    className="block text-muted-foreground hover:text-primary transition-colors duration-200 text-sm text-left"
                   >
                     {link.name}
                   </button>

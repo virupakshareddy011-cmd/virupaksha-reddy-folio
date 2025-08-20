@@ -12,7 +12,7 @@ const SkillsSection = () => {
         if (entry.isIntersecting) {
           setIsVisible(true);
           // Animate skill bars with staggered delays
-          const skills = ['Python', 'Machine Learning', 'Cloud Computing', 'C/C++', 'UI/UX Design'];
+          const skills = ['Python', 'C/C++', 'Machine Learning', 'AWS Cloud', 'Google Cloud', 'UI/UX Design'];
           skills.forEach((skill, index) => {
             setTimeout(() => {
               setAnimatedSkills(prev => [...prev, skill]);
@@ -32,17 +32,18 @@ const SkillsSection = () => {
 
   const technicalSkills = [
     { name: 'Python', level: 90, icon: Code, color: 'bg-yellow-500' },
+    { name: 'C/C++', level: 85, icon: Database, color: 'bg-blue-600' },
     { name: 'Machine Learning', level: 85, icon: Brain, color: 'bg-purple-500' },
-    { name: 'Cloud Computing', level: 75, icon: Cloud, color: 'bg-blue-500' },
-    { name: 'C/C++', level: 80, icon: Database, color: 'bg-red-500' },
+    { name: 'AWS Cloud', level: 75, icon: Cloud, color: 'bg-orange-500' },
+    { name: 'Google Cloud', level: 75, icon: Cloud, color: 'bg-blue-500' },
     { name: 'UI/UX Design', level: 70, icon: Palette, color: 'bg-pink-500' },
   ];
 
   const softSkills = [
-    { name: 'Critical Thinking', icon: Brain },
     { name: 'Problem Solving', icon: Lightbulb },
     { name: 'Team Collaboration', icon: Users },
     { name: 'Communication', icon: MessageSquare },
+    { name: 'Adaptability', icon: Brain },
   ];
 
   return (
@@ -119,9 +120,9 @@ const SkillsSection = () => {
                 <h4 className="text-lg font-semibold text-foreground mb-4">Technologies & Tools</h4>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'Python', 'TensorFlow', 'PyTorch', 'Scikit-learn', 'Pandas', 'NumPy',
-                    'AWS', 'Google Cloud', 'Docker', 'Git', 'MongoDB', 'PostgreSQL',
-                    'React', 'Node.js', 'FastAPI', 'Flask'
+                    'Python', 'C/C++', 'Machine Learning', 'TensorFlow', 'PyTorch', 'OpenCV',
+                    'AWS', 'Google Cloud', 'ROS', 'MQTT', 'FastAPI', 'React',
+                    'PostgreSQL', 'Git', 'Docker', 'HTML/CSS', 'JavaScript'
                   ].map((tech) => (
                     <span
                       key={tech}

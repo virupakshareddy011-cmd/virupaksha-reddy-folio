@@ -27,56 +27,42 @@ const ProjectsSection = () => {
 
   const projects = [
     {
+      title: "AirSync - Real-Time Dual Drone Coordination",
+      description: "Ongoing cutting-edge project focused on real-time distance-constrained coordination between dual drones for autonomous navigation and synchronized operations.",
+      role: "Lead Developer & Research Engineer",
+      contributions: [
+        "Real-time communication protocol design between dual drones",
+        "Distance constraint algorithms for safe coordination",
+        "Machine learning models for predictive path planning",
+        "Autonomous navigation system development",
+        "Performance optimization for real-time operations"
+      ],
+      technologies: ["Python", "ROS", "OpenCV", "TensorFlow", "C++", "MQTT", "GPS Navigation"],
+      impact: "Developing next-generation UAV coordination technology with potential applications in surveillance, delivery, and rescue operations",
+      github: "https://github.com/virupaksha-reddy/airsync",
+      demo: "#",
+      icon: Brain,
+      featured: true,
+      status: "Ongoing"
+    },
+    {
       title: "Patient Queue and Doctor Appointment Management System",
-      description: "A comprehensive healthcare management system that streamlines patient appointments, queue management, and doctor schedules using machine learning for optimal resource allocation.",
-      role: "Full-Stack Developer & ML Engineer",
-      responsibilities: [
+      description: "Comprehensive healthcare management system that streamlines patient appointments, queue management, and doctor schedules using intelligent algorithms.",
+      role: "Full-Stack Developer",
+      contributions: [
         "Data collection and preprocessing for patient flow analysis",
         "Backend API development using Python/FastAPI",
         "Frontend development with React and modern UI components",
         "Machine learning integration for predictive scheduling",
         "Database design and optimization"
       ],
-      technologies: ["Python", "FastAPI", "React", "PostgreSQL", "Machine Learning", "TensorFlow", "Docker"],
+      technologies: ["Python", "FastAPI", "React", "PostgreSQL", "Machine Learning", "HTML/CSS", "JavaScript"],
       impact: "Reduced patient waiting time by 40% and improved appointment scheduling efficiency by 60%",
       github: "https://github.com/virupaksha-reddy/patient-management",
       demo: "https://patient-management-demo.vercel.app",
       icon: Users,
-      featured: true
-    },
-    {
-      title: "AI-Powered Cloud Resource Optimizer",
-      description: "Machine learning solution for optimizing cloud resource allocation and cost management across AWS and Google Cloud platforms.",
-      role: "ML Engineer",
-      responsibilities: [
-        "Cloud usage pattern analysis",
-        "Cost optimization algorithm development",
-        "AWS/GCP integration",
-        "Performance monitoring dashboard"
-      ],
-      technologies: ["Python", "AWS", "Google Cloud", "Scikit-learn", "Pandas", "Streamlit"],
-      impact: "Achieved 35% cost reduction in cloud infrastructure spending",
-      github: "https://github.com/virupaksha-reddy/cloud-optimizer",
-      demo: "#",
-      icon: Database,
-      featured: false
-    },
-    {
-      title: "Neural Network Visualization Tool",
-      description: "Interactive web application for visualizing neural network architectures and training processes in real-time.",
-      role: "Frontend Developer & ML Engineer",
-      responsibilities: [
-        "Interactive neural network visualization",
-        "Real-time training metrics display",
-        "Model architecture comparison",
-        "Educational content integration"
-      ],
-      technologies: ["React", "D3.js", "PyTorch", "WebGL", "Node.js"],
-      impact: "Used by 500+ students for learning neural network concepts",
-      github: "https://github.com/virupaksha-reddy/nn-visualizer",
-      demo: "https://nn-visualizer.netlify.app",
-      icon: Brain,
-      featured: false
+      featured: true,
+      status: "Completed"
     }
   ];
 
@@ -111,11 +97,25 @@ const ProjectsSection = () => {
                       <div>
                         <CardTitle className="text-xl mb-2 group-hover:text-primary transition-colors">
                           {project.title}
-                          {project.featured && (
-                            <Badge variant="secondary" className="ml-2 bg-secondary/20 text-secondary border-secondary/30">
-                              Featured
-                            </Badge>
-                          )}
+                          <div className="flex items-center gap-2 mt-1">
+                            {project.featured && (
+                              <Badge variant="secondary" className="bg-secondary/20 text-secondary border-secondary/30">
+                                Featured
+                              </Badge>
+                            )}
+                            {project.status && (
+                              <Badge 
+                                variant="outline" 
+                                className={`${
+                                  project.status === 'Ongoing' 
+                                    ? 'bg-orange-500/20 text-orange-600 border-orange-500/30' 
+                                    : 'bg-green-500/20 text-green-600 border-green-500/30'
+                                }`}
+                              >
+                                {project.status}
+                              </Badge>
+                            )}
+                          </div>
                         </CardTitle>
                         <CardDescription className="text-muted-foreground">
                           {project.role}
@@ -149,12 +149,12 @@ const ProjectsSection = () => {
                   </p>
 
                   <div>
-                    <h4 className="font-semibold text-foreground mb-3">Key Responsibilities:</h4>
+                    <h4 className="font-semibold text-foreground mb-3">Key Contributions:</h4>
                     <ul className="space-y-2">
-                      {project.responsibilities.map((responsibility, idx) => (
+                      {project.contributions.map((contribution, idx) => (
                         <li key={idx} className="flex items-start space-x-2">
                           <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                          <span className="text-muted-foreground text-sm">{responsibility}</span>
+                          <span className="text-muted-foreground text-sm">{contribution}</span>
                         </li>
                       ))}
                     </ul>

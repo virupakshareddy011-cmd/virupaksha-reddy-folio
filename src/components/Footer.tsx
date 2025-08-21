@@ -23,7 +23,7 @@ const Footer = () => {
     },
     {
       name: 'LinkedIn',
-      href: 'https://linkedin.com/in/virupaksha-reddy',
+      href: 'https://www.linkedin.com/in/virupaksha-reddy-39327631a/',
       icon: Linkedin,
       hoverColor: 'hover:text-blue-500'
     },

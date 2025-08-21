@@ -74,7 +74,7 @@ const HeroSection = () => {
           <Button 
             size="lg" 
             className="bg-gradient-hero hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-glow border-0 px-8 py-3"
-            onClick={() => window.open('#', '_blank')}
+            onClick={() => window.open('https://docs.google.com/document/d/11xtXx0VEJ7njgaswLysq4ivHbN0cngsy/edit?usp=sharing&ouid=117609929054762025161&rtpof=true&sd=true', '_blank')}
           >
             <Download className="mr-2 h-5 w-5" />
             Download Resume
@@ -100,7 +100,7 @@ const HeroSection = () => {
             <Mail className="h-6 w-6" />
           </a>
           <a
-            href="https://linkedin.com/in/virupaksha-reddy"
+            href="https://www.linkedin.com/in/virupaksha-reddy-39327631a/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-card/50 backdrop-blur-sm border border-border/50 hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300 hover-glow"

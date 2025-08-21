@@ -27,44 +27,34 @@ const CertificationsSection = () => {
 
   const certifications = [
     {
-      title: "AI using Python",
+      title: "Artificial Intelligence using Python",
       issuer: "Infosys Springboard",
-      date: "2023",
+      date: "2024",
       status: "Completed",
       description: "Comprehensive course covering artificial intelligence concepts, machine learning algorithms, and Python implementation of AI solutions.",
       skills: ["Python", "Artificial Intelligence", "Machine Learning", "Data Science"],
-      credentialUrl: "https://infyspringboard.onwingspan.com/verify/ai-python",
+      credentialUrl: "https://drive.google.com/file/d/1Hfr_ANo5G3peLzKvylMUS-vWdWFTIk--/view?usp=drivesdk",
       logo: "🤖"
     },
     {
-      title: "Data Structures and Algorithms in Python", 
+      title: "Data Structures & Algorithms using Python", 
       issuer: "Infosys Springboard",
       date: "2023",
       status: "Completed",
       description: "Advanced course on data structures, algorithm design, optimization techniques, and problem-solving using Python.",
       skills: ["Python", "Data Structures", "Algorithms", "Problem Solving", "Optimization"],
-      credentialUrl: "https://infyspringboard.onwingspan.com/verify/dsa-python",
+      credentialUrl: "https://drive.google.com/file/d/1qgrWEvwnO6F6_meHK8I08fKxg4PSwGQc/view?usp=drivesdk",
       logo: "🐍"
     },
     {
-      title: "Google Cloud Fundamentals",
-      issuer: "Google Cloud",
+      title: "IBM Certification",
+      issuer: "IBM",
       date: "2024",
       status: "Completed",
-      description: "Foundation course covering Google Cloud Platform services, cloud architecture, security, and best practices.",
-      skills: ["Google Cloud", "Cloud Architecture", "Compute Engine", "Cloud Storage", "Cloud Security"],
-      credentialUrl: "https://cloud.google.com/verify/gcp-fundamentals",
-      logo: "☁️"
-    },
-    {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2024", 
-      status: "Completed",
-      description: "Entry-level certification covering AWS cloud concepts, core services, security, architecture, and pricing models.",
-      skills: ["AWS", "Cloud Computing", "EC2", "S3", "Cloud Security", "Cost Optimization"],
-      credentialUrl: "https://aws.amazon.com/verify/cloud-practitioner",
-      logo: "🚀"
+      description: "Professional certification in IBM technologies and methodologies, demonstrating proficiency in enterprise-level solutions.",
+      skills: ["IBM Technologies", "Enterprise Solutions", "Cloud Computing", "Data Analytics"],
+      credentialUrl: "https://drive.google.com/file/d/1OwLiS-2NRPPVBPOmr7cTFvEzMWox2JRv/view?usp=drivesdk",
+      logo: "💼"
     }
   ];
 
